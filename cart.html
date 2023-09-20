@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="css/boatnav.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="offer">Navigate your life on our <b>largest round HD display - 1.52". Buy Lunar Vista</b> now!</div>
+    <nav>
+        <div class="nav-bar">
+            <img class="nav-logo" src="assets/boAt_logo.svg" alt="logo">
+            <div class="nav-list">
+                <ul>
+                    <li>Categories
+                        <svg style="transform: rotate(90deg); margin-left:6px;" focusable="false" width="7" height="10"
+                            class="icon icon--dropdown-arrow-right    icon--direction-aware" viewBox="0 0 7 10">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </li>
+                    <li>Daily Deals</li>
+                    <li>Gift With boAt</li>
+                    <li>Bulk Orders</li>
+                    <li>More
+                        <svg style="transform: rotate(90deg); margin-left:6px;" focusable="false" width="7" height="10"
+                            class="icon icon--dropdown-arrow-right    icon--direction-aware" viewBox="0 0 7 10">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchprofile">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="search" class="search-input" placeholder="Search...">
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-button" style="border: none; " id="dropdownButton">
+                        <!-- <img src="assets/Profile-1.webp" alt="profile" style="height:25px; width:25px"> -->
+                    </button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <h5 style="color: red;">Hi boAthead!</h5>
+                        <button type="button" class="btnlogin-popup logindrop" id="logindrop" data-toggle="modal"
+                            data-target="#myModal">Login</button>
+                    </div>
+                </div>
+                <button href="#" style="border: none;" class="" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 21.002 23.5">
+                        <path data-name="Path 337551"
+                            d="M1591.25 1038.75v1.25a.75.75 0 0 0 1.5 0v-1.25h1.471a1.25 1.25 0 0 1 1.242 1.1l1.529 13a1.249 1.249 0 0 1-1.241 1.4h-15.5a1.249 1.249 0 0 1-1.241-1.4l1.529-13a1.25 1.25 0 0 1 1.241-1.1h1.472v1.25a.75.75 0 0 0 1.5 0v-1.25zm1.5-1.5v-.25a4.75 4.75 0 0 0-9.5 0v.25h-1.472a2.75 2.75 0 0 0-2.731 2.429l-1.529 13a2.75 2.75 0 0 0 2.731 3.071h15.5a2.75 2.75 0 0 0 2.731-3.071l-1.529-13a2.751 2.751 0 0 0-2.732-2.429zm-4.75-3.5a3.25 3.25 0 0 0-3.25 3.25v.25h6.5v-.25a3.25 3.25 0 0 0-3.25-3.25z"
+                            transform="translate(-1577.499 -1032.25)" style="fill:#1a2024;fill-rule:evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Your Cart</h5>
+            <button type="button" style="size: 20px;" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+            <div style="display: flex; flex-direction: column;">
+                <div class="order-opt">
+                    <div class="order-opt-tags">
+                        <img src="assets/1_year_warranty_small.svg" alt="warranty">
+                        <div class="order-opt-title">
+                            <span><b>1 Year</b></span>
+                            <span style="font-weight: 500;">Warranty</span>
+                        </div>
+                    </div>
+                    <div class="order-opt-tags">
+                        <img src="assets/7_day_return_small.svg" alt="return">
+                        <div class="order-opt-title">
+                            <span><b>7 Days</b></span>
+                            <span style="font-weight: 500;">Replacement</span>
+                        </div>
+                    </div>
+                    <div class="order-opt-tags">
+                        <img src="assets/Free_shipping_small.svg" alt="shipping">
+                        <div class="order-opt-title">
+                            <span><b>Free</b></span>
+                            <span style="font-weight: 500;"> Shipping</span>
+                        </div>
+                    </div>
+                    <div class="order-opt-tags">
+                        <img src="assets/gst_billing.svg" alt="gst">
+                        <div class="order-opt-title">
+                            <span><b>GST</b></span>
+                            <span style="font-weight: 500;">Billing</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 0 10px ; margin-top: 10px; display: flex; justify-content: flex-start; ">
+                    <div style="height: 92px; width: 102px;">
+                        <img src="assets/cart-item.png" alt="item1">
+                    </div>
+                    <div style="width: 274px;">
+                        <div>
+                            <span><b style="font-weight: 500; font-size: 14px;">Wave flex connection</b></span>
+                            <span>
+                                <h6>$ 12,522.00</h6>
+                            </span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="font-size: 12px;">Active black</span>
+                            <div style="font-size: 12px; margin: 0 10px;">
+                                <svg focusable="false" width="8" height="2" class="icon icon--minus" viewBox="0 0 8 2">
+                                    <path fill="currentColor" d="M0 0h8v2H0z"></path>
+                                </svg>
+                                <span>02</span>
+                                <svg focusable="false" width="8" height="8" class="icon icon--plus" viewBox="0 0 8 8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5v3h2V5h3V3H5V0H3v3H0v2h3z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <div class="gst-opt">
+                    <input type="checkbox">
+                    <span>Get <b>GST </b>Invoice <img
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/info_icon_f55786bc-bf63-46f7-813c-f2ad6a657488.png?v=1683113880"
+                            class="gst_info_icon">
+                    </span>
+
+
+                </div>
+                <div class="offer_text">
+                    <span>₹15 off on All UPI Payments</span>
+                    <div class="payment_icons">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/paytm_icon_fa75a315-11a2-4c8e-a241-18af809eb683.svg?v=1682575951"
+                            class="single_payment_icon paytm_icon">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gpay_icon_503ebbda-a3e1-4659-af32-0686aecec227.svg?v=1682575951"
+                            class="single_payment_icon gpay_icon">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/phone_pe_icon_f9872d32-f8cf-43ca-8fa2-78db125fcdad.svg?v=1682575951"
+                            class="single_payment_icon phonepe_icon">
+                    </div>
+                </div>
+                <div class="confirm" style="display: flex; justify-content: space-between; padding: 10px 15px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <span><b>₹ 1,499</b></span>
+                        <span style="font-size:10px;">Inclusive of all taxes</span>
+                    </div>
+                    <button>Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

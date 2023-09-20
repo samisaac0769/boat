@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat-lifestyle Home</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/boatjs.js"></script>
+    <link rel="stylesheet" href="css/boatnav.css">
+
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <div class="offer">Navigate your life on our <b>largest round HD display - 1.52". Buy Lunar Vista</b> now!</div>
+    <nav>
+        <div class="nav-bar">
+            <img class="nav-logo" src="assets/boAt_logo.svg" alt="logo">
+            <div class="nav-list">
+                <ul>
+                    <li>Categories
+                        <svg style="transform: rotate(90deg); margin-left:6px;" focusable="false" width="7" height="10"
+                            class="icon icon--dropdown-arrow-right    icon--direction-aware" viewBox="0 0 7 10">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </li>
+                    <li>Daily Deals</li>
+                    <li>Gift With boAt</li>
+                    <li>Bulk Orders</li>
+                    <li>More
+                        <svg style="transform: rotate(90deg); margin-left:6px;" focusable="false" width="7" height="10"
+                            class="icon icon--dropdown-arrow-right    icon--direction-aware" viewBox="0 0 7 10">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchprofile">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="search" class="search-input" placeholder="Search...">
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-button" style="border: none; " id="dropdownButton">
+                        <!-- <img src="assets/Profile-1.webp" alt="profile" style="height:25px; width:25px"> -->
+                    </button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <h5 style="color: red;">Hi boAthead!</h5>
+                        <button type="button" class="btnlogin-popup logindrop" id="logindrop" data-toggle="modal"
+                            data-target="#myModal">Login</button>
+                    </div>
+                </div>
+                <button href="#" style="border: none;" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 21.002 23.5">
+                        <path data-name="Path 337551"
+                            d="M1591.25 1038.75v1.25a.75.75 0 0 0 1.5 0v-1.25h1.471a1.25 1.25 0 0 1 1.242 1.1l1.529 13a1.249 1.249 0 0 1-1.241 1.4h-15.5a1.249 1.249 0 0 1-1.241-1.4l1.529-13a1.25 1.25 0 0 1 1.241-1.1h1.472v1.25a.75.75 0 0 0 1.5 0v-1.25zm1.5-1.5v-.25a4.75 4.75 0 0 0-9.5 0v.25h-1.472a2.75 2.75 0 0 0-2.731 2.429l-1.529 13a2.75 2.75 0 0 0 2.731 3.071h15.5a2.75 2.75 0 0 0 2.731-3.071l-1.529-13a2.751 2.751 0 0 0-2.732-2.429zm-4.75-3.5a3.25 3.25 0 0 0-3.25 3.25v.25h6.5v-.25a3.25 3.25 0 0 0-3.25-3.25z"
+                            transform="translate(-1577.499 -1032.25)" style="fill:#1a2024;fill-rule:evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class=" loginpage modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="loginhead">
+                    <h2 class="modal-title">Get <b>started</b></h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <span><b style="font-weight: 300; padding-left: 125px;">Please enter your Mobile Number to
+                        continue</b></span>
+                <div class="loginbody">
+                    <span>Enter Mobile Number</span>
+                    <input type="text" class="form-control" id="mobileNumber" pattern="[0-9]*" maxlength="10"
+                        placeholder="+91 Type here" required="">
+                    <span id="errormsg"></span>
+                    <button type="submit" class="" onclick="otp()">
+                        <h4>SEND OTP</h4>
+                    </button>
+                </div>
+                <p class="otp-login-privacy-policy">
+                    By Confirming, you agree to boAt's Terms and Conditions and Privacy Policy.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class=" loginpage modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="loginhead">
+                    <h2 class="modal-title">OTP <b>Verification</b></h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <span><b style="font-weight: 300; padding-left: 125px;">Enter the OTP sent to your Mobile Number
+                    </b></span>
+                <div class="loginbody">
+                    <input type="text" class="form-control" id="otpNumber" pattern="[0-9]*" maxlength="6"
+                        placeholder="Enter the 6 digit OTP here....." required="">
+                    <span class="timer" type="button" id="time" onclick="timer()"></span>
+                    <span id="timerror"></span>
+                    <button type="submit" onclick="checkotp()">
+                        <h4>Continue</h4>
+                    </button>
+                </div>
+                <p class="otp-login-privacy-policy">
+                    By Confirming, you agree to boAt's Terms and Conditions and Privacy Policy.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>

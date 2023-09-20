@@ -1,0 +1,80 @@
+.order-opt img {
+    height: 30px;
+    max-width: 100%;
+    border-style: none;
+    vertical-align: top;
+    padding: 0 5px;
+}
+
+.order-opt {
+    padding: 10PX ;
+    display: flex;
+gap: 10px;
+}
+
+.order-opt-title {
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+}
+
+.order-opt-tags {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+}
+
+.gst-opt {
+    font-size: 12px;
+    padding: 10px 12px;
+    background: white;
+    display: flex;
+    gap: 8px
+}
+
+.gst-opt input[type="checkbox"] {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+.gst_info_icon {
+    width: 12px;
+    opacity: 0.7;
+    vertical-align: middle;
+}
+
+
+.offer_text{
+    border-bottom: 1px solid rgba(204, 197, 197, 0.76);
+    background-color:#e7e73a4a;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 5px 20px;
+}
+ .offer_text span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a2024;
+}
+
+.payment_icons {
+    padding: 0px 20px;
+    display: flex;
+    gap: 8px;
+}
+
+.confirm button{
+    border: none;
+    border-radius: 5px!important;
+    font-size: 15px!important;
+    font-weight: 700!important;
+    cursor: pointer;
+    padding: 15px 50px;
+    background-color: #000000;
+    color: white;
+}
+
+
