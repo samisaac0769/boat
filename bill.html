@@ -10,6 +10,9 @@
     <script src="js/code.jquery.com_jquery-3.6.0.min.js"></script>
     <script src="js/bill.js"></script>
 
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link href="https://fonts.cdnfonts.com/css/metropolis-2" rel="stylesheet">
     <!-- bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -22,12 +25,13 @@
 <body>
     <div class="main">
         <div class="bill">
-            <div style="border-right: 1px solid;" class="left-side">
+            <div class="left-side">
                 <img class="boat-text" src="assets/boAt_logo.svg" alt="boAt">
                 <div style="position: relative;">
                     <div class="pay-steps d-flex justify-content-between">
                         <div class="pay-opt " id="mobile">
-                            <span class="circle-box border  border-dark-subtle border-2 rounded-circle">1</span> Mobile
+                            <span class="circle-box border  border-dark border-2 rounded-circle"><b>1</b></span><b>
+                                Mobile</b>
                         </div>
                         <div class="pay-opt " id="address">
                             <span class="circle-box border  border-dark-subtle border-2 rounded-circle">2</span> Address
@@ -39,32 +43,172 @@
                     </div>
                     <progress value="0.33" id="progress-bar" class="progress svelte-zr67ud"></progress>
                 </div>
-                <div>
+                <div id="bill-mobile">
                     <div class="bill-mobile">
                         <div>
                             <h5>Enter Mobile Number</h5>
                         </div>
                         <div class="mobile-input">
                             <span>+91</span>
-                            <input class="phone" type="text" required maxlength="10" minlength="10">
+                            <input id="10dig" class="phone" type="text" required maxlength="10" minlength="10" placeholder="Mobile Number">
                         </div>
-                        <div class="moblie-check">
+                        <div class="moblie-check fs-12">
                             <input type="checkbox" name="" id="" checked>
                             <span>Notify me for orders, updates & offers</span>
                         </div>
-                        <button class="mobile-cont">Continue -></button>
+                        <button class="mobile-cont" id>Continue -></button>
                     </div>
                 </div>
-                <div>
-                    <span class="svelte-1qke82o"><a class="gokwik-links svelte-1qke82o" target="_blank"
-                            href="https://www.gokwik.co/terms">T&amp;C</a>
-                        |
-                        <a class="gokwik-links svelte-1qke82o" target="_blank"
-                            href="https://www.gokwik.co/data-policy">Privacy</a>
-                        | efd78bf2</span>
+                <div id="bill-address">
+                    <div class="bill-address d-flex flex-column gap-2">
+                        <div class="d-flex wel-address align-middle gap-2">
+                            <span class="fs-13">Hey! Welcome back +91 83008 22603</span>
+                            <button>Edit</button>
+                        </div>
+                        <h5 class="mt-2">Shipping Address</h5>
+                        <div class="add-address w-100 border rounded border-black d-flex flex-column ">
+                            <div class="d-flex justify-content-between">
+                                <span class="fs-6" style="letter-spacing: 0.07em; color: black;"><b>Sam Isaac</b></span>
+                                <button><a class="fs-12"> Edit</a></button>
+                            </div>
+                            <span class="">5/43 Aluvilai, Kanyakumari, Tamil Nadu, 629168</span>
+                            <span class="mt-2">samisaacsp@gmail.com</span>
+                        </div>
+                        <div class="shipping-method d-flex gap-3 mt-3">
+                            <span class="svelte">Shipping method</span>
+                            <div>
+                                <input type="radio">
+                                <label for="1" class="svelte-1j9f459">Shipping <span class="poppins-b">@ ₹0</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mt-3 ms-2 d-flex gap-3">
+                            <span class="material-symbols-outlined fs-40">
+                                add_circle
+                                </span>
+                                <span class="svelte mt-2 text-black">Add New Address</span>
+                        </div>
+                    </div>
+                    <button class="nextstep-address" id>Continue -></button>
+                </div>
+                <div id="payment-method">
+                    <div class="payment-method overflow-y-auto">
+                        <div class="align-middle d-flex mt-2 gap-2">
+                            <span class="material-symbols-outlined">arrow_left_alt</span>
+                            <span>Open any UPI App & scan QR Code to pay</span>
+                        </div>
+                        <div class="d-flex gap-1 justify-content-between mx-5">
+                            <div class="d-flex flex-column justify-content-between gap-1">
+                                <div class="d-flex flex-column m-2 px-3 py-2">
+                                    <img src="assets/phone-pay.svg" alt="phonepay" class="icon-img-size">
+                                    <span class="fs-12 A5A5A5">PhonePe</span>
+                                </div>
+                                <div class="d-flex flex-column m-2 px-3 py-2">
+                                    <img src="assets/google-icon.svg" alt="google" class="icon-img-size">
+                                    <span class="fs-12 A5A5A5">Google Pay</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between gap-1">
+                                <div class="d-flex flex-column m-2 px-3 py-2">
+                                    <img src="assets/bhmi.svg" alt="bhmi" class="icon-img-size">
+                                    <span class="fs-12 A5A5A5">BHIM</span>
+                                </div>
+                                <div class="d-flex flex-column m-2 px-3 py-2">
+                                    <img src="assets/paytm.svg" alt="paytm" class="icon-img-size">
+                                    <span class="fs-12 A5A5A5">Paytm</span>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="assets/upi.png" alt="upi" style="height: 180px;width: 180px;max-width: none;">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="mx-2 ">
+                            <span class="fs-13 A5A5A5">You will get a payment link on</span>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class=" border-bottom pb-1 border-dark">
+                                    <span>+91</span>
+                                    <input type="text" name=""  id="pay-number" placeholder="Enter Mobile Number" maxlength="10" minlength="10">
+                                </div>
+                                <button class="pay-send">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bill-footer">
+                    <div class="d-flex justify-content-between align-middle">
+                        <span class="svelte-1qke82o"><a class="gokwik-links svelte-1qke82o" target="_blank"
+                                href="https://www.gokwik.co/terms">T&amp;C</a>
+                            |
+                            <a class="gokwik-links svelte-1qke82o" target="_blank"
+                                href="https://www.gokwik.co/data-policy">Privacy</a>
+                            | efd78bf2
+                        </span>
+                        <div class="footer-info svelte-1qke82">
+                            <img src="assets/pcd.svg" alt="" class="svelte-1qke82o">
+                            <img src="assets/secr.svg" alt="" class="svelte-1qke82o">
+                            <img src="assets/ver.svg" alt="" class="svelte-1qke82o">
+                        </div>
+                        <div style="font-size: 8px; margin-top: 8px; ">
+                            <span>Powered By</span>
+                            <img class="svelte-1qke82o" src="assets/gok.svg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="right-side">right</div>
+            <div class="right-side">
+                <button class="close-btn "><img src="assets/close.svg" alt="Close Button" class="svelte-lkpla5">
+                </button>
+                <div class="clear"></div>
+                <div class="ms-4">
+                    <img src="assets/cart-icon.svg" alt="cart">
+                    <span">Order Summary</span>
+                        <svg style="transform: rotate(-90deg); margin-left:6px;" focusable="false" width="7" height="10"
+                            class="icon icon--dropdown-arrow-right    icon--direction-aware" viewBox="0 0 7 10"
+                            id="dropdownButton">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+                                fill="currentColor"></path>
+                        </svg>
+                </div>
+                <div class="dropdown" id="dropdownContent">
+                    <div class=" d-flex mt-3 px-3 mx-3">
+                        <img src="assets/cart-item.png" alt="watch" style="width: 70px; height: 70PX;">
+                        <div class="bill-product ps-2" style="font-size: 13px;">boAt Wave Flex Connect | 1.83" (4.64 cm)
+                            Large Display BT Calling
+                            Smartwatch, Upto 10 Days Battery, IP68, Dust &amp; Splash Resistance - Active Black
+                        </div>
+                    </div>
+                    <div class=" bil-details px-3 mt-3 ms-3 d-flex flex-column gap-1">
+                        <div class="justify-content-between w-100 d-flex">
+                            <span>Subtotal</span>
+                            <span>₹1499.00</span>
+                        </div>
+                        <div class="justify-content-between w-100 d-flex">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="justify-content-between w-100 d-flex mt-4">
+                            <span><b>To Pay</b></span>
+                            <span><b>₹1499.00</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-summary-container delivery-estimate svelte-1vi7f5r d-flex gap-3 mt-4 ms-5">
+                    <img src="assets/express.svg" alt="shipping-icon" class="svelte-1vi7f5r">
+                    <p class="svelte-1vi7f5r pt-2">Earliest Delivery by 22 Sep, 9 AM</p>
+                </div>
+                <div class="offer ms-4">
+                    <div>
+                        <img src="assets/percentage.svg" alt="%">
+                        <input type="text" name="" id="" class="offer-code ms-2" placeholder="Enter coupon code">
+                    </div>
+                    <span type="button">Have a Gift Card?</span>
+                    <div class="clear "></div>
+                </div>
+
+
+            </div>
         </div>
     </div>
 </body>

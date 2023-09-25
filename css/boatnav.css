@@ -128,7 +128,7 @@ nav {
     margin: 50% auto;
 }
 
-.modal{
+.modal {
     margin-top: 64px !important;
 }
 
@@ -155,7 +155,7 @@ h2 {
     padding: 0;
 }
 
-.loginbody input{
+.loginbody input {
     padding: 10px 20px;
     height: 45px;
     outline: none;
@@ -165,7 +165,7 @@ h2 {
     margin-bottom: 21px;
 }
 
-.loginbody button{
+.loginbody button {
     margin-left: 115px;
     border: none;
     border-radius: 5px;
@@ -177,7 +177,7 @@ h2 {
     min-width: 195px;
 }
 
-.otp-login-privacy-policy{
+.otp-login-privacy-policy {
     text-align: center;
     color: #878787;
     font-weight: 600;
@@ -185,8 +185,8 @@ h2 {
     padding: 10px 0;
 }
 
-#errormsg, #timerror
-{
+#errormsg,
+#timerror {
     color: red;
     font-weight: 500;
     margin-top: 0;
@@ -197,7 +197,7 @@ h2 {
 
 
 
-.timer{
+.timer {
     cursor: pointer;
 }
 
@@ -285,20 +285,54 @@ h2 {
     width: 70%;
     height: 100%;
     margin: 0;
-  }
-  
-  .modal.right .modal-content {
+}
+
+.modal.right .modal-content {
     height: 100%;
     overflow-y: auto;
-  }
-  
-  /* Add a transition for sliding effect */
-  .modal.right.fade .modal-dialog {
+}
+
+/* Add a transition for sliding effect */
+.modal.right.fade .modal-dialog {
     transition: transform 0.4s ease-in-out;
     transform: translateX(100%);
-  }
-  
-  .modal.right.show .modal-dialog {
+}
+
+.modal.right.show .modal-dialog {
     transform: translateX(0);
-  }
-  
+}
+
+
+.Categories-drop {
+    margin: 0 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    position: absolute;
+    background-color: white;
+    align-items: center;
+    display: none;
+}
+
+.cat-drop1 {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.cat-card {
+    width: 40%;
+}
+
+.cat-card img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.cat-card span {
+    font-size: 12px;
+    padding-left: 10px;
+}
