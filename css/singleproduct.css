@@ -1,0 +1,279 @@
+.product-body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.A-product {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+
+.p-img img {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.mainimg {
+    background-color: #d8d4d4 !important;
+    border-radius: 15px;
+}
+
+.detail-img {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.select-color {
+    margin-top: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.detail-pay {
+    margin: 0px 0 10px 0;
+    background-color: rgba(255, 166, 0, 0.349);
+    border-radius: 5PX;
+    width: 410px;
+    padding: 10px 0;
+}
+
+.Users {
+    gap: 20px;
+    background-color: rgba(194, 194, 233, 0.671);
+    padding: 10px;
+    border-radius: 10px;
+    width: 410px;
+    margin-bottom: 10px;
+}
+
+.active-offer {
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 410px;
+    margin-bottom: 20px;
+    border: 1px solid green;
+    background-color: rgba(194, 194, 233, 0.671);
+    position: relative;
+}
+
+.bulk {
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -11px;
+    left: 45px;
+    font-size: 11px;
+}
+
+.add-btn {
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: black;
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    color: white;
+    font-size: 16px;
+}
+
+.delivery-opt {
+    justify-content: space-between;
+    margin: 20px;
+    padding: 25px 230px;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+
+.detail-img1 img {
+    width: auto;
+    height: 40px;
+    text-align: center;
+}
+
+.detail-img1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.opt-nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    background-color: black;
+    padding: 10px;
+}
+
+.opt-nav span button {
+    padding: 15px 20px;
+    font-size: 16px !important;
+    color: red;
+    font-weight: 600;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.pro-abo-img img {
+    margin: 0 10px;
+    height: 150px;
+}
+
+.about-product {
+    padding: 30px;
+    text-align: center;
+}
+
+.about-product p {
+    margin-top: 15px;
+    padding: 0 120px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.banner1-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    padding: 20PX 20px 20px 45px;
+    background: linear-gradient(to top, #a50921, #ed1d26);
+    color: white;
+    width: 50%;
+}
+
+.banner1-img img {
+    margin: 0 25%;
+}
+
+.banner1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.banner1-img h2,
+h2 {
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 30px !important;
+}
+
+.banner2 {
+    background: linear-gradient(to top, #a50921, #ed1d26);
+
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.warrenty {
+    display: flex;
+    align-items: center;
+    background: #1A2024;
+    color: white;
+}
+
+.like-it {
+    margin: 0 !important;
+    border-top: 1px solid;
+}
+
+.like-it h2 {
+
+    text-align: center;
+    color: black !important;
+    padding: 20px 0 0 0;
+}
+
+.like-cards {
+    margin-top: 30px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like-card1 img {
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.like-card1{
+    width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fs-12{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.playback{
+    position: absolute;
+    background-color: #fcc50b;
+    border-radius: 10px;
+    padding: 5px 20px;
+    top: 69%;
+    left:25%;
+    font-size: 12px;
+}
+
+.card1-abt{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.card1-abt div{
+     display: flex;
+     justify-content: space-between;
+}
+
+.circle
+{
+    margin-left: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #D0D9DE;
+}
+
+.atc-btn{
+    background-color: #1A2024;
+    padding: 0 30px;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+}

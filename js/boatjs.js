@@ -43,6 +43,29 @@ document.addEventListener('DOMContentLoaded', () => {
         dropdownContent.style.display = "none";
     });
 
+    const Categories = document.getElementById("Categories");
+    const Categoriesdrop = document.getElementById("Categories-drop");
+
+    Categories.addEventListener("mouseover", function () {
+        if (Categoriesdrop.style.display === "none" || Categoriesdrop.style.display === "") {
+            Categories.addEventListener("mouseover", function () {
+                Categoriesdrop.style.display = "block";
+            });
+
+
+            Categoriesdrop.addEventListener("mouseover", function () {
+                Categoriesdrop.style.display = "block";
+            });
+        } else {
+            Categoriesdrop.addEventListener("mouseout", function () {
+                Categoriesdrop.style.display = "none";
+            });
+        }
+    });
+
+
+
+
 });
 
 function otp() {
@@ -67,7 +90,7 @@ function otp() {
         });
 
         $('#myModal').modal('hide');
-        
+
         startCountdown();
     }
 }
@@ -90,7 +113,7 @@ function startCountdown() {
         } else {
             clearInterval(interval);
             timeDisplay.style.width = "auto";
-            timeDisplay.style.padding = "5px"; 
+            timeDisplay.style.padding = "5px";
             timeDisplay.textContent = "Resend OTP!";
         }
     }
@@ -100,7 +123,7 @@ function startCountdown() {
 }
 
 
-function checkotp(){
+function checkotp() {
     const otpNumber = document.getElementById("otpNumber").value;
     const error = document.getElementById("timerror");
 
@@ -112,7 +135,7 @@ function checkotp(){
     else if (otpNumber.length !== 6) {
         error.textContent = "Enter the 6 digit OTP number ";
     }
-    else{
+    else {
         error.textContent = "";
         $('#myModal2').modal('hide');
     }
